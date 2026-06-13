@@ -25,14 +25,14 @@ jobs:
             - name: install dependencies
               run: npm install
 
-            - name: build up app
-              run: npm run build --if-present
-
             - name: instal playwright
               run: npx playwright install
 
             - name: starting server
               run: npm run server &
+
+            - name: start app
+              run: npm run start
 
             - name: start tests
               run: npm test
