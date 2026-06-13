@@ -32,7 +32,7 @@ jobs:
               run: npm run server &
 
             - name: start app
-              run: npm run start
+              run: npm run start &
 
             - name: start tests
               run: npm test
